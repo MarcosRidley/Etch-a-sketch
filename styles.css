@@ -14,5 +14,10 @@
   flex: 1;
 }
 
-/* .testingColor {
-} */
+.testingColor {
+  background-color: white;
+}
+
+.add {
+  background-color: red;
+}
