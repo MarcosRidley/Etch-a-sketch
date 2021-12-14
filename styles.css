@@ -1,0 +1,18 @@
+.hidden {
+  display: none;
+}
+:root {
+  --colunas: ;
+}
+.game-content {
+  width: 960px;
+  height: 960px;
+  display: grid;
+  grid-template-columns: var(--colunas);
+}
+.game-div {
+  flex: 1;
+}
+
+/* .testingColor {
+} */
