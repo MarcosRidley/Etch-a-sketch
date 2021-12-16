@@ -2,6 +2,13 @@ const startGame = document.querySelector(".start-game");
 const startButton = document.querySelector(".start-button");
 const gameSpace = document.querySelector(".game-content");
 startGame.addEventListener("click", createDivs);
+const colorPicker = document.getElementById("chosenColor");
+colorPicker.addEventListener("change", (event) =>
+  document.documentElement.style.setProperty(
+    "--currentColor",
+    colorPicker.value
+  )
+);
 
 function createDivs() {
   deleteDivs();
@@ -9,6 +16,7 @@ function createDivs() {
   const divNumber = prompt("Qual o lado do quadrado?");
   if (divNumber > 100 || divNumber <= 0) {
     alert("Por favor digite um número entre 1 e 100");
+    return "broken";
   }
   document.documentElement.style.setProperty(
     "--colunas",
@@ -40,4 +48,11 @@ function deleteDivs() {
   for (let i = 0; i < activeDivs.length; i++) {
     activeDivs[i].remove();
   }
+}
+
+function changeColor() {
+  document.documentElement.style.setProperty(
+    "--currentColor",
+    colorPicker.value
+  );
 }
