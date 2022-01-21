@@ -1,0 +1,25 @@
+{
+  "name": "EtchASketch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketchbook.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosRidley/Etch-a-sketch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosRidley/Etch-a-sketch/issues"
+  },
+  "homepage": "https://github.com/MarcosRidley/Etch-a-sketch#readme",
+  "devDependencies": {
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

@@ -3,7 +3,7 @@
 }
 :root {
   --colunas: ;
-  --currentColor: ;
+  --currentColor: black;
 }
 .game-content {
   width: 960px;
